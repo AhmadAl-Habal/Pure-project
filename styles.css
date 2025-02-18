@@ -1,0 +1,385 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+}
+#sidebar {
+  padding-top: 50px;
+}
+#sidebar a {
+  text-decoration: none;
+  color: white;
+ 
+}
+.jumbotron {
+  background-image: url("images/headerImg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  min-height: 100vh;
+  flex: 1;
+  padding-bottom: 0;
+}
+
+h1 {
+  text-transform: uppercase;
+  color: white;
+  font-family: Verdana;
+  font-weight: bold;
+  transition: all 1s ease-in;
+}
+
+h1:hover {
+  color: red;
+}
+
+h2 {
+  font-family: Verdana;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+hr {
+  margin-top: 20px;
+  width: 80px;
+  border: 1.5px solid black;
+}
+
+.jumbotron hr {
+  border: 1.5px solid white;
+}
+
+.jumbotron p {
+  padding: 0 30%;
+  color: white;
+  font-family: Segoe UI;
+}
+
+#clearing {
+  clear: both;
+}
+
+@media screen and (max-width: 570px) {
+  .jumbotron p {
+    padding: 0 10% !important;
+  }
+}
+
+.lead {
+  font-weight: 400;
+}
+
+.IMPORTANT_HEIGHT {
+  min-height: 80vh;
+}
+
+#sidebarCollapse {
+  transition: none;
+  border: 0;
+}
+
+#sidebarCollapse:hover {
+  background: inherit;
+  border: transparent;
+}
+
+#sidebar {
+  min-width: 250px;
+  max-width: 250px;
+  min-height: 100vh;
+  background: #c2bc5e;
+  transition: all 0.3s;
+}
+
+#sidebar.active {
+  margin-left: -250px;
+}
+
+#sidebar ul {
+  padding-left: 20px;
+}
+
+.wrapping {
+  height: 300px;
+  width: 100%;
+  position: relative;
+}
+
+#pure {
+  background-image: url("images/pure.png");
+}
+
+#quote {
+  background-image: url("images/quote.png");
+}
+
+#help {
+  background-image: url("images/help.png");
+}
+
+.PICTURES_ROW {
+  position: absolute;
+  top: 45%;
+  width: 100%;
+}
+
+#pure,
+#quote,
+#help {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  background-position: center center;
+  transition: 0.5s;
+}
+
+.button {
+  background: transparent;
+  border: 1px solid white;
+  padding: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
+  font-weight: bold;
+  color: white;
+  transition: ease-in-out 0.2s;
+}
+
+.button:hover {
+  border-radius: 10px;
+  font-size: 120%;
+}
+
+#links {
+  margin-bottom: 40px;
+}
+
+#links a {
+  padding: 20px;
+  text-transform: uppercase;
+  color: black;
+}
+/* #gallery img:hover{
+        padding: 0;
+        border: 4px solid black;
+        transform: scale(1.1);
+        transform: rotateY(180deg);
+        background: black;
+    } */
+
+#gallery img {
+  width: 80%;
+  height: 100%;
+  /* transition: 1s ease-out; */
+  margin-bottom: 25px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 280px;
+  height: 317px;
+  perspective: 1000px;
+  margin-bottom: 25px;
+  margin-left: 25px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #586176;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+#partners {
+  background-color: #f4f4f4;
+}
+
+#partners img {
+  margin: 20px 0;
+}
+
+#filler {
+  width: 270px;
+  max-height: 360px;
+  border: 1px solid black;
+}
+
+@media screen and (max-width: 767.5px) /*the point half in this expression prevents an off by one pixel error */ {
+  #filler {
+    height: 360px;
+  }
+}
+
+#about img:hover {
+  transition: 0.3s ease-out;
+}
+
+#about img:hover {
+  filter: brightness(50%) blur(1px);
+}
+
+.BRIGHTNESS_CONTAINER {
+  position: relative;
+}
+
+.POP_UP {
+  opacity: 0.6;
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+  visibility: hidden;
+  color: black;
+  transition: 0.1s ease-in;
+}
+
+.VISIBLE {
+  opacity: 1;
+  position: absolute;
+  bottom: 10%;
+  left: 45%;
+  visibility: visible;
+  color: black;
+  transition: 0.2s;
+}
+
+#location-left {
+  background-color: #f2f2f2;
+}
+
+#location-right {
+  background-color: #e4e4e4;
+  padding: 40px;
+}
+
+#after-left {
+  padding: 40px;
+  white-space: nowrap;
+}
+
+input {
+  border: transparent;
+  border-bottom: 1px solid black;
+  background: inherit;
+  width: 100%;
+}
+
+label {
+  width: 100%;
+}
+
+.NEEDS_PADDING {
+  padding-left: 20px;
+}
+
+#location-right button,
+#about button {
+  border: 3px solid black;
+  padding: 8px;
+  padding-left: 40px;
+  padding-right: 40px;
+  transition: 0.05s;
+}
+
+#about button {
+  background: transparent;
+}
+
+#location-right button:active,
+#about button:active {
+  transform: scale(0.98);
+  box-shadow: 2px 2px 7px 1px rgba(45, 36, 19, 0.87);
+}
+
+#why {
+  min-height: 700px;
+  position: relative;
+  background-color: white;
+}
+
+#why img {
+  margin-bottom: 20px;
+}
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: grey;
+}
+
+.carousel-indicators .active {
+  background-color: orange;
+}
+
+.blurring {
+  filter: blur(4px);
+  -webkit-transition: 0.2s -webkit-filter linear;
+  -moz-transition: 0.2s -moz-filter linear;
+  -moz-transition: 0.2s filter linear;
+  -ms-transition: 0.2s -ms-filter linear;
+  -o-transition: 0.2s -o-filter linear;
+  transition: 0.2s filter linear, 0.2s -webkit-filter linear;
+}
+
+footer {
+  height: 300px;
+  background-color: #222222;
+  padding-top: 5rem;
+}
+
+footer p {
+  color: white;
+}
+
+.name {
+  color: orange;
+}
+
+#y {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='black' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5L4.25 4l2.5-2.5L5.25 0z'/%3e%3c/svg%3e");
+}
+
+#z {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='black' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/%3e%3c/svg%3e");
+  margin-left: 50px;
+}
+/* explanation of the y and z ids:
+        to change the color of the svg element, i had to fiddle with the fill="code for a color" attribute in the img link.
+        i got the url for the image and put "fill = 'black'" to make the arrows appear against the white background.
+        you can change the color to any color you want..*/
+/*how the blur effect works
+       the background image is contained in a wrapper that's blurred when hovered on
+       the button is its sibling in the wrapper, without any blur effect
+       and it's absolutely posititioned
+
+       image carousel: from bootstrap's official documentation
+       3d flip cards: stolen from the Internet
+       */
